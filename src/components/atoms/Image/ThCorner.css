@@ -1,0 +1,33 @@
+.tp-corner {
+    @apply absolute;
+    width: clamp(1.25rem, 4vw, 2.125rem);
+    filter: drop-shadow(0 0.2rem 0.05rem var(--color-tp-primary-600));
+}
+
+.tp-corner--right {
+    right: -2px;
+}
+
+.tp-corner--left {
+    left: -2px;
+}
+
+.tp-corner--bottom {
+    bottom: -2px;
+}
+
+.tp-corner--top {
+    top: -2px
+}
+
+.tp-corner--right.tp-corner--bottom {
+    @apply rotate-90;
+}
+
+.tp-corner--left.tp-corner--bottom {
+    @apply rotate-180;
+}
+
+.tp-corner--left.tp-corner--top {
+    @apply rotate-270;
+}
